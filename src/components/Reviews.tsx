@@ -57,7 +57,7 @@ export function Reviews({
               <span>out of 5</span>
             </p>
             <p className="reviews__count">
-              From {count} Google reviews — and counting.
+              From {count} Google reviews and counting.
             </p>
             <ul className="reviews__mentions" aria-label="Most mentioned in reviews">
               {mentions.map((mention) => (

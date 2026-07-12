@@ -47,7 +47,7 @@ export function Footer({
             <BrandMark />
           </div>
           <p>
-            Family dentistry in Dearborn — kind staff, clear care, and a
+            Family dentistry in Dearborn. Kind staff, clear care, and a
             welcoming place for your smile.
           </p>
           <div className="footer__socials" aria-label="Social links">

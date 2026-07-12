@@ -54,7 +54,7 @@ export function Hero({
             href={reviewsUrl}
             target="_blank"
             rel="noreferrer"
-            aria-label={`Rated ${rating} stars from ${reviewCount} Google reviews — read them on Google`}
+            aria-label={`Rated ${rating} stars from ${reviewCount} Google reviews. Read them on Google.`}
           >
             <Stars rating={rating} size={19} />
             <span>
