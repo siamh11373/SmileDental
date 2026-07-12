@@ -7,13 +7,19 @@ type Benefit = {
   body: string;
 };
 
-export function WhyChooseUs({ benefits }: { benefits: Benefit[] }) {
+type WhyChooseUsProps = {
+  benefits: Benefit[];
+  eyebrow: string;
+  title: string;
+};
+
+export function WhyChooseUs({ benefits, eyebrow, title }: WhyChooseUsProps) {
   return (
     <section className="why-us section" id="why-us">
       <div className="container">
         <AnimatedContent className="section-heading section-heading--center">
-          <p className="eyebrow eyebrow--shimmer">Why Smile Dental Care</p>
-          <h2>Professional care. A genuinely welcoming experience.</h2>
+          <p className="eyebrow eyebrow--shimmer">{eyebrow}</p>
+          <h2>{title}</h2>
         </AnimatedContent>
         <div className="why-us__grid">
           {benefits.map((benefit, index) => (

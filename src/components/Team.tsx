@@ -7,6 +7,11 @@ type TeamProps = {
   doctorImage: string;
   teamImage: string;
   phoneHref: string;
+  eyebrow: string;
+  title: string;
+  body: string;
+  storyTitle: string;
+  storyBody: string;
 };
 
 export function Team({
@@ -14,21 +19,21 @@ export function Team({
   doctorImage,
   teamImage,
   phoneHref,
+  eyebrow,
+  title,
+  body,
+  storyTitle,
+  storyBody,
 }: TeamProps) {
   return (
     <section className="team section" id="team">
       <div className="container">
         <AnimatedContent className="section-heading section-heading--split">
           <div>
-            <p className="eyebrow eyebrow--shimmer">
-              Meet the people behind your care
-            </p>
-            <h2>A familiar team, ready to welcome you.</h2>
+            <p className="eyebrow eyebrow--shimmer">{eyebrow}</p>
+            <h2>{title}</h2>
           </div>
-          <p>
-            Dentistry feels different when you know the people beside you. Meet
-            the team creating a warm, professional experience at every visit.
-          </p>
+          <p>{body}</p>
         </AnimatedContent>
 
         <div className="team__layout">
@@ -42,7 +47,7 @@ export function Team({
               />
             </div>
             <div className="doctor-card__body">
-              <p>Doctor</p>
+              <p>Dentist</p>
               <h3>{doctorName}</h3>
               <MagneticLink href={phoneHref}>
                 Schedule a visit
@@ -61,11 +66,8 @@ export function Team({
               />
             </div>
             <div className="team-story__body">
-              <span>One team. One warm welcome.</span>
-              <p>
-                From the front desk to the treatment room, our team is here to
-                make your visit feel clear, comfortable, and cared for.
-              </p>
+              <span>{storyTitle}</span>
+              <p>{storyBody}</p>
               <MagneticLink className="button button--outline" href={phoneHref}>
                 <Phone aria-hidden="true" size={17} />
                 Call our team

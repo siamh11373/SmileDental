@@ -17,6 +17,13 @@ type Service = {
   icon: string;
 };
 
+type ServicesProps = {
+  services: Service[];
+  eyebrow: string;
+  title: string;
+  body: string;
+};
+
 const icons: Record<string, LucideIcon> = {
   shield: ShieldCheck,
   sparkles: Sparkles,
@@ -26,19 +33,16 @@ const icons: Record<string, LucideIcon> = {
   calendar: CalendarDays,
 };
 
-export function Services({ services }: { services: Service[] }) {
+export function Services({ services, eyebrow, title, body }: ServicesProps) {
   return (
     <section className="services section" id="care">
       <div className="container">
         <AnimatedContent className="section-heading section-heading--split">
           <div>
-            <p className="eyebrow eyebrow--shimmer">Care for every smile</p>
-            <h2>Thoughtful dentistry, from first visit to next step.</h2>
+            <p className="eyebrow eyebrow--shimmer">{eyebrow}</p>
+            <h2>{title}</h2>
           </div>
-          <p>
-            Your smile is personal. We make space for questions, comfort, and a
-            care conversation that starts with you.
-          </p>
+          <p>{body}</p>
         </AnimatedContent>
 
         <div className="services__grid">
@@ -68,7 +72,7 @@ export function Services({ services }: { services: Service[] }) {
           })}
         </div>
         <p className="services__disclaimer">
-          Looking for something specific? Call our team and we’ll help you find
+          Looking for something specific? Call us and we&apos;ll help you find
           the right next step.
         </p>
       </div>

@@ -19,6 +19,9 @@ type ReviewsProps = {
   profileUrl: string;
   mentions: ReviewMention[];
   highlights: ReviewHighlight[];
+  eyebrow: string;
+  title: string;
+  body: string;
 };
 
 export function Reviews({
@@ -27,21 +30,19 @@ export function Reviews({
   profileUrl,
   mentions,
   highlights,
+  eyebrow,
+  title,
+  body,
 }: ReviewsProps) {
   return (
     <section className="reviews section" id="reviews">
       <div className="container">
         <AnimatedContent className="section-heading section-heading--split">
           <div>
-            <p className="eyebrow eyebrow--shimmer">
-              Rated {rating} stars on Google
-            </p>
-            <h2>Trusted by Dearborn families, one smile at a time.</h2>
+            <p className="eyebrow eyebrow--shimmer">{eyebrow}</p>
+            <h2>{title}</h2>
           </div>
-          <p>
-            Real words from real patients — gentle visits, a team that listens,
-            and care people come back to for years.
-          </p>
+          <p>{body}</p>
         </AnimatedContent>
 
         <div className="reviews__layout">
@@ -71,7 +72,7 @@ export function Reviews({
               target="_blank"
               rel="noreferrer"
             >
-              Read our Google reviews
+              Read Google Reviews
               <ArrowUpRight aria-hidden="true" size={17} />
             </MagneticLink>
           </AnimatedContent>

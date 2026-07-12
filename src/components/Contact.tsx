@@ -15,6 +15,12 @@ type ContactProps = {
   phoneHref: string;
   facebookUrl: string;
   buildingImage: string;
+  ctaEyebrow: string;
+  ctaTitle: string;
+  ctaBody: string;
+  visitEyebrow: string;
+  visitTitle: string;
+  visitBody: string;
 };
 
 export function Contact({
@@ -25,6 +31,12 @@ export function Contact({
   phoneHref,
   facebookUrl,
   buildingImage,
+  ctaEyebrow,
+  ctaTitle,
+  ctaBody,
+  visitEyebrow,
+  visitTitle,
+  visitBody,
 }: ContactProps) {
   return (
     <>
@@ -33,15 +45,12 @@ export function Contact({
         <div className="container appointment-cta__inner">
           <AnimatedContent>
             <p className="eyebrow eyebrow--light eyebrow--shimmer">
-              Your next visit
+              {ctaEyebrow}
             </p>
-            <h2>Ready to give your smile a little more care?</h2>
+            <h2>{ctaTitle}</h2>
           </AnimatedContent>
           <AnimatedContent delay={120}>
-            <p>
-              Call Smile Dental Care to ask a question or plan your visit with
-              our Dearborn team.
-            </p>
+            <p>{ctaBody}</p>
             <MagneticLink className="button button--gold" href={phoneHref}>
               <Phone aria-hidden="true" size={17} />
               {phone}
@@ -54,13 +63,10 @@ export function Contact({
         <div className="container">
           <AnimatedContent className="section-heading section-heading--split">
             <div>
-              <p className="eyebrow eyebrow--shimmer">Find us in Dearborn</p>
-              <h2>Visit Smile Dental Care.</h2>
+              <p className="eyebrow eyebrow--shimmer">{visitEyebrow}</p>
+              <h2>{visitTitle}</h2>
             </div>
-            <p>
-              Conveniently located on Dix Avenue. Use the map link for live
-              directions, then call our team to plan your visit.
-            </p>
+            <p>{visitBody}</p>
           </AnimatedContent>
 
           <div className="visit__grid">
@@ -73,7 +79,7 @@ export function Contact({
               />
               <a href={mapsUrl} target="_blank" rel="noreferrer">
                 <Navigation aria-hidden="true" size={18} />
-                Open live directions
+                Get directions
               </a>
             </AnimatedContent>
             <SpotlightCard
@@ -100,7 +106,7 @@ export function Contact({
                 rel="noreferrer"
                 aria-label={`Get directions to ${address}`}
               >
-                Get directions
+                Open in Google Maps
                 <ArrowUpRight aria-hidden="true" size={17} />
               </a>
               <a

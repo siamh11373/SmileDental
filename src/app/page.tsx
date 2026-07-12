@@ -61,7 +61,12 @@ export default function Home() {
           reviewCount={site.reviews.count}
           reviewsUrl={site.reviews.profileUrl}
         />
-        <Services services={site.services} />
+        <Services
+          services={site.services}
+          eyebrow={site.sections.services.eyebrow}
+          title={site.sections.services.title}
+          body={site.sections.services.body}
+        />
         <CareFeatures
           features={site.careFeatures}
           phoneHref={site.practice.phoneHref}
@@ -72,17 +77,31 @@ export default function Home() {
           profileUrl={site.reviews.profileUrl}
           mentions={site.reviews.mentions}
           highlights={site.reviews.highlights}
+          eyebrow={site.sections.reviews.eyebrow}
+          title={site.sections.reviews.title}
+          body={site.sections.reviews.body}
         />
         <CtaBand
           phone={site.practice.phone}
           phoneHref={site.practice.phoneHref}
+          eyebrow={site.sections.midCta.eyebrow}
+          title={site.sections.midCta.title}
         />
-        <WhyChooseUs benefits={site.benefits} />
+        <WhyChooseUs
+          benefits={site.benefits}
+          eyebrow={site.sections.whyUs.eyebrow}
+          title={site.sections.whyUs.title}
+        />
         <Team
           doctorName={site.practice.primaryDoctor}
           doctorImage={site.images.doctorPortrait}
           teamImage={site.images.teamExterior}
           phoneHref={site.practice.phoneHref}
+          eyebrow={site.sections.team.eyebrow}
+          title={site.sections.team.title}
+          body={site.sections.team.body}
+          storyTitle={site.sections.teamStory.title}
+          storyBody={site.sections.teamStory.body}
         />
         <Contact
           address={site.practice.address}
@@ -92,6 +111,12 @@ export default function Home() {
           phoneHref={site.practice.phoneHref}
           facebookUrl={site.practice.facebookUrl}
           buildingImage={site.images.buildingTeamWide}
+          ctaEyebrow={site.sections.cta.eyebrow}
+          ctaTitle={site.sections.cta.title}
+          ctaBody={site.sections.cta.body}
+          visitEyebrow={site.sections.visit.eyebrow}
+          visitTitle={site.sections.visit.title}
+          visitBody={site.sections.visit.body}
         />
       </main>
       <Footer

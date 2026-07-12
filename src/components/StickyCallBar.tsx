@@ -18,7 +18,7 @@ export function StickyCallBar({ phone, phoneHref }: StickyCallBarProps) {
       </a>
       <a className="sticky-call-bar__book" href={phoneHref}>
         <CalendarDays aria-hidden="true" size={18} />
-        Request Appointment
+        Book Appointment
       </a>
     </div>
   );

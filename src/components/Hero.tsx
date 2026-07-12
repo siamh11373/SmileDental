@@ -92,8 +92,8 @@ export function Hero({
             />
           </div>
           <div className="hero__media-label">
-            <span>Our team</span>
-            <strong>Here for your smile</strong>
+            <span>Dearborn team</span>
+            <strong>Ready for your smile</strong>
           </div>
         </AnimatedContent>
       </div>

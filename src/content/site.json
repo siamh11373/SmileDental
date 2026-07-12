@@ -3,7 +3,7 @@
     "name": "Smile Dental Care",
     "shortName": "Smile Dental",
     "primaryDoctor": "Dr. Bassam Ali",
-    "tagline": "Family-oriented dental care in Dearborn",
+    "tagline": "Family dentistry in Dearborn, MI",
     "address": "9550 Dix Ave Suite D, Dearborn, MI 48120",
     "addressLines": ["9550 Dix Ave Suite D", "Dearborn, MI 48120"],
     "phone": "(313) 438-5158",
@@ -22,25 +22,25 @@
     "highlights": [
       {
         "name": "Chantyl",
-        "quote": "Since day one, my experience with this dental office has been amazing. The entire team is kind, caring, and always makes me feel comfortable."
+        "quote": "Since day one, my experience has been amazing. The entire team is kind, caring, and always makes me feel comfortable."
       },
       {
         "name": "Deena",
-        "quote": "They were both amazing, super friendly, and kept me comfortable the whole time. There was absolutely no pain at all. I definitely recommend them."
+        "quote": "Super friendly and kept me comfortable the whole time. There was absolutely no pain at all. I definitely recommend them."
       },
       {
         "name": "Badr A.",
-        "quote": "I've been attending Smile Dental for 7 years now. My loyalty for Dr. Bassam Ali and his team continues because of the astonishing job they do every day."
+        "quote": "I've been coming here for 7 years. My loyalty to Dr. Bassam Ali and his team continues because of the care they give every day."
       },
       {
         "name": "Haeder A.",
-        "quote": "This is by far the best dental office I have ever visited. The staff are truly amazing, always polite, respectful, and extremely helpful."
+        "quote": "This is by far the best dental office I have ever visited. The staff are polite, respectful, and extremely helpful."
       }
     ]
   },
   "navigation": [
     { "label": "About", "href": "#about" },
-    { "label": "Care", "href": "#care" },
+    { "label": "Services", "href": "#care" },
     { "label": "Reviews", "href": "#reviews" },
     { "label": "Team", "href": "#team" },
     { "label": "Visit", "href": "#visit" }
@@ -52,14 +52,14 @@
     "buildingTeamWide": "/images/exterior/smile-dental-building-team-wide.png"
   },
   "homepage": {
-    "eyebrow": "Family Dental Care in Dearborn, MI",
-    "heroHeadline": "Family dentistry in Dearborn that feels personal.",
-    "heroBody": "A warm, welcoming team on Dix Avenue, ready to care for your smile — from routine visits to your next step.",
+    "eyebrow": "Family Dentistry in Dearborn, MI",
+    "heroHeadline": "Your family deserves a healthier, brighter smile.",
+    "heroBody": "Gentle, professional dental care for patients of all ages — right here on Dix Avenue in Dearborn.",
     "primaryCta": "Call (313) 438-5158",
-    "secondaryCta": "Meet Our Team",
+    "secondaryCta": "Meet the Team",
     "trustChips": [
-      "Welcoming new patients",
-      "Family-oriented care",
+      "New patients welcome",
+      "Kind, friendly staff",
       "Dix Ave, Dearborn"
     ]
   },
@@ -67,54 +67,54 @@
     {
       "number": "01",
       "title": "Preventive Care",
-      "summary": "Every healthy smile begins with attentive routine care and a plan made for you.",
+      "summary": "Cleanings, exams, and preventive care to keep your smile healthy.",
       "icon": "shield"
     },
     {
       "number": "02",
       "title": "Restorative Care",
-      "summary": "Thoughtful solutions focused on comfort, function, and confidence in your smile.",
+      "summary": "Fillings and restorative care focused on comfort and lasting results.",
       "icon": "sparkles"
     },
     {
       "number": "03",
       "title": "Cosmetic Care",
-      "summary": "Personalized conversations about the shape, shade, and appearance of your smile.",
+      "summary": "Smile improvements tailored to how you want to look and feel.",
       "icon": "wand"
     },
     {
       "number": "04",
       "title": "Family Dentistry",
-      "summary": "A calm, approachable dental home designed to welcome patients and families.",
+      "summary": "Care for every age in a calm, welcoming office.",
       "icon": "heart"
     },
     {
       "number": "05",
-      "title": "Smile Consultations",
-      "summary": "Start with a conversation about your goals, concerns, and next best step.",
+      "title": "Consultations",
+      "summary": "Ask questions, share your goals, and get a clear next step.",
       "icon": "message"
     },
     {
       "number": "06",
       "title": "Ongoing Care",
-      "summary": "Clear guidance and supportive follow-up to help you care for your smile over time.",
+      "summary": "Follow-up and guidance so your smile stays healthy over time.",
       "icon": "calendar"
     }
   ],
   "careFeatures": [
     {
-      "eyebrow": "Care that begins with listening",
-      "title": "A comfortable dental experience, centered on you.",
-      "body": "Every visit should feel clear and considered. Our team takes time to understand what brings you in, answer your questions, and help you feel at ease from the moment you arrive.",
+      "eyebrow": "Comfort first",
+      "title": "Clear explanations. Calm visits.",
+      "body": "We take time to listen, answer your questions, and explain every step so you feel comfortable from the moment you arrive.",
       "image": "/images/team/smile-dental-team-interior.png",
       "imageAlt": "Smile Dental Care team inside the Dearborn clinic",
       "layout": "image-right",
       "tone": "blush"
     },
     {
-      "eyebrow": "Your neighborhood dental home",
-      "title": "One welcoming team for every stage of your smile.",
-      "body": "From routine visits to conversations about improving your smile, we bring a family-oriented approach to dental care in a friendly, professional setting.",
+      "eyebrow": "Your Dearborn dental home",
+      "title": "One team for your whole family.",
+      "body": "From first visits to long-term care, our Dix Avenue team is here to make dental care simple, welcoming, and reliable.",
       "image": "/images/exterior/smile-dental-building-team-wide.png",
       "imageAlt": "Smile Dental Care team outside the clinic building",
       "layout": "image-left",
@@ -124,23 +124,63 @@
   "benefits": [
     {
       "number": "01",
-      "title": "A family-oriented approach",
-      "body": "A welcoming environment created to help every visit feel approachable."
+      "title": "Kind, welcoming staff",
+      "body": "Patients often mention our friendly team — from the front desk to the treatment room."
     },
     {
       "number": "02",
-      "title": "Care that feels personal",
-      "body": "We begin with your questions, your comfort, and your goals for your smile."
+      "title": "Clear explanations",
+      "body": "We explain your options in plain language so you can make confident decisions."
     },
     {
       "number": "03",
-      "title": "A team you can know",
-      "body": "Real people, a warm setting, and a practice rooted in the Dearborn community."
+      "title": "Gentle, comfortable care",
+      "body": "Many patients tell us they feel at ease and experience little to no discomfort."
     },
     {
       "number": "04",
-      "title": "Clear next steps",
-      "body": "Call our team to talk through your visit and find the right next step."
+      "title": "Easy to get started",
+      "body": "Call us to ask a question or schedule your visit. New patients are welcome."
     }
-  ]
+  ],
+  "sections": {
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Dental care for every need.",
+      "body": "From routine cleanings to smile improvements, we help you find the right next step."
+    },
+    "whyUs": {
+      "eyebrow": "Why Patients Choose Us",
+      "title": "Dentistry built on trust and care.",
+      "body": ""
+    },
+    "reviews": {
+      "eyebrow": "4.7 Stars on Google",
+      "title": "Trusted by Dearborn families.",
+      "body": "Real reviews from real patients — kind staff, clear care, and visits people come back for."
+    },
+    "team": {
+      "eyebrow": "Meet Your Team",
+      "title": "Care from people you can trust.",
+      "body": "Led by Dr. Bassam Ali, our Dearborn team is known for being kind, clear, and thorough."
+    },
+    "teamStory": {
+      "title": "One team. One warm welcome.",
+      "body": "From the front desk to the treatment room, we make every visit clear, comfortable, and cared for."
+    },
+    "cta": {
+      "eyebrow": "Book Your Visit",
+      "title": "Your healthier smile starts with a call.",
+      "body": "Have a question or ready to schedule? Our Dearborn team is here to help."
+    },
+    "midCta": {
+      "eyebrow": "New Patients Welcome",
+      "title": "Ready to schedule your visit?"
+    },
+    "visit": {
+      "eyebrow": "Visit Us in Dearborn",
+      "title": "Convenient care on Dix Avenue.",
+      "body": "Located at 9550 Dix Ave Suite D. Call for directions, hours, or to book your appointment."
+    }
+  }
 }

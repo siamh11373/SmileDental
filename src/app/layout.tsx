@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     template: "%s | Smile Dental Care",
   },
   description:
-    "Family-oriented dental care in Dearborn, Michigan. Call Smile Dental Care to ask a question or plan your visit.",
+    "Family dentistry in Dearborn, MI. Gentle, professional care from Dr. Bassam Ali and team. Call (313) 438-5158 to book your visit.",
   openGraph: {
-    title: "Smile Dental Care",
+    title: "Smile Dental Care | Family Dentist in Dearborn, MI",
     description:
-      "A warm, family-oriented dental clinic serving the Dearborn community.",
+      "Your family deserves a healthier, brighter smile. Kind staff, clear care, and a welcoming dental home on Dix Avenue.",
     type: "website",
     locale: "en_US",
   },

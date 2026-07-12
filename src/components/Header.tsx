@@ -99,7 +99,7 @@ export function Header({
             {phone}
           </a>
           <MagneticLink className="button button--gold button--small" href={phoneHref}>
-            Call to schedule
+            Call Now
           </MagneticLink>
         </div>
       </div>
@@ -123,7 +123,7 @@ export function Header({
               className="button button--gold button--small"
               href={phoneHref}
             >
-              Request Appointment
+              Book Appointment
             </MagneticLink>
           </div>
           <div className="nav-actions">
@@ -183,7 +183,7 @@ export function Header({
             ))}
           </div>
           <div className="mobile-nav__footer">
-            <p>Ready to plan your visit?</p>
+            <p>Ready to book your visit?</p>
             <MagneticLink className="button button--gold" href={phoneHref}>
               <Phone aria-hidden="true" size={17} />
               {phone}

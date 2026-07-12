@@ -47,8 +47,8 @@ export function Footer({
             <BrandMark />
           </div>
           <p>
-            Family-oriented dental care in Dearborn, with a warm team and a
-            welcoming place to care for your smile.
+            Family dentistry in Dearborn — kind staff, clear care, and a
+            welcoming place for your smile.
           </p>
           <div className="footer__socials" aria-label="Social links">
             <a
@@ -76,7 +76,7 @@ export function Footer({
         </nav>
 
         <nav className="footer__column" aria-label="Footer services">
-          <h2>Our Services</h2>
+          <h2>Services</h2>
           {services.slice(0, 6).map((service) => (
             <a key={service.title} href="#care">
               {service.title}
@@ -96,7 +96,7 @@ export function Footer({
           </a>
           <p>
             <Clock aria-hidden="true" size={18} />
-            <span>Call for current hours and scheduling.</span>
+            <span>Call for hours and scheduling.</span>
           </p>
           <a href={facebookUrl} target="_blank" rel="noreferrer">
             <span aria-hidden="true">f</span>

@@ -37,7 +37,7 @@ export function CareFeatures({
               <h2>{feature.title}</h2>
               <p>{feature.body}</p>
               <MagneticLink className="text-link" href={phoneHref}>
-                Start a conversation
+                Call to get started
                 <ArrowUpRight aria-hidden="true" size={17} />
               </MagneticLink>
             </AnimatedContent>
