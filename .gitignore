@@ -22,3 +22,4 @@
 .cursor/
 artifacts/
 graphify-out/
+.vercel
