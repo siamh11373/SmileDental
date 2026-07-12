@@ -1,0 +1,79 @@
+{
+  "source": "https://smileprodentist.com/",
+  "capturedAt": "2026-07-11",
+  "intent": "Approximate tokens for a very similar Smile Dental website layout.",
+  "colors": {
+    "charcoal": "#2f312f",
+    "charcoalDeep": "#1f2220",
+    "textPrimary": "#3f3a36",
+    "textMuted": "#6f6963",
+    "cream": "#f6f2ed",
+    "warmWhite": "#fbfaf7",
+    "blush": "#f1e6e2",
+    "sand": "#ddd0bf",
+    "gold": "#d7ad22",
+    "goldDark": "#b99117",
+    "borderGold": "#dfc97a",
+    "white": "#ffffff",
+    "black": "#111111"
+  },
+  "typography": {
+    "heading": {
+      "recommendedFamilies": ["Cormorant Garamond", "Playfair Display", "Georgia", "serif"],
+      "weight": "600",
+      "tracking": "-0.01em",
+      "desktopHeroSize": "52px",
+      "sectionHeadingSize": "40px",
+      "mobileHeroSize": "28px"
+    },
+    "body": {
+      "recommendedFamilies": ["Montserrat", "Inter", "Arial", "sans-serif"],
+      "weight": "400",
+      "desktopSize": "15px",
+      "mobileSize": "15px",
+      "lineHeight": "1.65"
+    },
+    "nav": {
+      "textTransform": "uppercase",
+      "letterSpacing": "0.08em",
+      "size": "12px",
+      "weight": "600"
+    },
+    "button": {
+      "textTransform": "uppercase",
+      "letterSpacing": "0.04em",
+      "size": "13px",
+      "weight": "600"
+    }
+  },
+  "spacing": {
+    "sectionDesktopY": "88px",
+    "sectionTabletY": "72px",
+    "sectionMobileY": "56px",
+    "containerDesktop": "1180px",
+    "containerWide": "1320px",
+    "gapDesktop": "32px",
+    "gapTablet": "24px",
+    "gapMobile": "18px"
+  },
+  "radii": {
+    "buttonPill": "999px",
+    "card": "0px",
+    "drawerPanel": "28px 0 0 28px"
+  },
+  "borders": {
+    "thin": "1px solid rgba(63, 58, 54, 0.18)",
+    "gold": "1px solid #dfc97a",
+    "darkCard": "1px solid rgba(223, 201, 122, 0.65)"
+  },
+  "shadows": {
+    "softCard": "0 10px 30px rgba(0, 0, 0, 0.08)",
+    "drawer": "0 24px 70px rgba(0, 0, 0, 0.22)"
+  },
+  "imageTreatment": {
+    "heroOverlay": "linear-gradient(rgba(31,34,32,0.86), rgba(31,34,32,0.88))",
+    "serviceCardAspectRatio": "4 / 3",
+    "teamCardAspectRatio": "3 / 4",
+    "offsetGoldBorder": true
+  }
+}
