@@ -26,5 +26,4 @@ Date: 2026-07-13
 
 - Local: `http://localhost:3020`
 - Vercel production: `https://smile-dental-care-seven.vercel.app`
-- Vercel deployment: `https://smile-dental-care-fs9wqkbui-siam-hossains-projects-0bbcaabd.vercel.app`
-- Vercel inspect: `https://vercel.com/siam-hossains-projects-0bbcaabd/smile-dental-care/3yKsJHGTMeaUaivYJQqQYfmDv3Zw`
+- Vercel project: `https://vercel.com/siam-hossains-projects-0bbcaabd/smile-dental-care`
