@@ -1803,13 +1803,30 @@ h3 {
   border-color: var(--gold);
 }
 
-.visit-card__social {
+.visit-card__socials {
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.1rem;
+  margin-top: 2.5rem;
+}
+
+.visit-card__social {
+  display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  margin-top: 2.5rem;
-  color: rgba(255, 255, 255, 0.64);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 0.92rem;
+  font-weight: 600;
+  transition: color 180ms ease;
+}
+
+.visit-card__social:hover {
+  color: var(--gold);
+}
+
+.visit-card__social svg {
+  flex: 0 0 auto;
+  color: var(--gold);
 }
 
 @keyframes routePulse {
@@ -1911,18 +1928,22 @@ h3 {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 50%;
-  font-size: 1.1rem;
-  font-weight: 800;
   transition:
     background-color 180ms ease,
     border-color 180ms ease,
+    color 180ms ease,
     transform 180ms ease;
 }
 
 .footer__socials a:hover {
+  color: var(--gold-pale);
   background: rgba(215, 173, 34, 0.18);
   border-color: rgba(215, 173, 34, 0.55);
   transform: translateY(-2px);
+}
+
+.footer__socials svg {
+  display: block;
 }
 
 .footer__column {
@@ -2208,7 +2229,7 @@ h3 {
   }
 
   .visit-card .text-link,
-  .visit-card__social {
+  .visit-card__socials {
     align-self: center;
   }
 }
@@ -2413,7 +2434,7 @@ h3 {
   }
 
   .visit-card .text-link,
-  .visit-card__social {
+  .visit-card__socials {
     align-self: flex-start;
   }
 

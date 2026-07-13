@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { AnimatedContent, MagneticLink, SpotlightCard } from "./MotionPrimitives";
+import { FacebookIcon, InstagramIcon } from "./SocialIcons";
 
 type ContactProps = {
   address: string;
@@ -14,6 +15,7 @@ type ContactProps = {
   phone: string;
   phoneHref: string;
   facebookUrl: string;
+  instagramUrl: string;
   buildingImage: string;
   ctaEyebrow: string;
   ctaTitle: string;
@@ -30,6 +32,7 @@ export function Contact({
   phone,
   phoneHref,
   facebookUrl,
+  instagramUrl,
   buildingImage,
   ctaEyebrow,
   ctaTitle,
@@ -109,15 +112,26 @@ export function Contact({
                 Open in Google Maps
                 <ArrowUpRight aria-hidden="true" size={17} />
               </a>
-              <a
-                className="visit-card__social"
-                href={facebookUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span aria-hidden="true">f</span>
-                Follow us on Facebook
-              </a>
+              <div className="visit-card__socials" aria-label="Social media">
+                <a
+                  className="visit-card__social"
+                  href={facebookUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FacebookIcon size={16} />
+                  Facebook
+                </a>
+                <a
+                  className="visit-card__social"
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <InstagramIcon size={16} />
+                  Instagram
+                </a>
+              </div>
             </SpotlightCard>
           </div>
         </div>

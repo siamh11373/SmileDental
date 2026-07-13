@@ -27,7 +27,7 @@ export default function Home() {
       addressCountry: "US",
     },
     image: site.images.teamInterior,
-    sameAs: [site.practice.facebookUrl],
+    sameAs: [site.practice.facebookUrl, site.practice.instagramUrl],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: site.reviews.rating,
@@ -110,6 +110,7 @@ export default function Home() {
           phone={site.practice.phone}
           phoneHref={site.practice.phoneHref}
           facebookUrl={site.practice.facebookUrl}
+          instagramUrl={site.practice.instagramUrl}
           buildingImage={site.images.buildingTeamWide}
           ctaEyebrow={site.sections.cta.eyebrow}
           ctaTitle={site.sections.cta.title}
@@ -127,6 +128,7 @@ export default function Home() {
         phoneHref={site.practice.phoneHref}
         mapsUrl={site.practice.mapsUrl}
         facebookUrl={site.practice.facebookUrl}
+        instagramUrl={site.practice.instagramUrl}
       />
       <StickyCallBar
         phone={site.practice.phone}

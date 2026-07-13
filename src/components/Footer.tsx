@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { BrandMark } from "./BrandMark";
+import { FacebookIcon, InstagramIcon } from "./SocialIcons";
 
 type NavigationItem = {
   label: string;
@@ -20,6 +21,7 @@ type FooterProps = {
   phoneHref: string;
   mapsUrl: string;
   facebookUrl: string;
+  instagramUrl: string;
 };
 
 export function Footer({
@@ -30,6 +32,7 @@ export function Footer({
   phoneHref,
   mapsUrl,
   facebookUrl,
+  instagramUrl,
 }: FooterProps) {
   return (
     <footer className="footer">
@@ -57,7 +60,15 @@ export function Footer({
               rel="noreferrer"
               aria-label="Follow Smile Dental Care on Facebook"
             >
-              <span aria-hidden="true">f</span>
+              <FacebookIcon size={18} />
+            </a>
+            <a
+              href={instagramUrl}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Follow Smile Dental Care on Instagram"
+            >
+              <InstagramIcon size={18} />
             </a>
             <a href="#top" aria-label="Back to top">
               <ArrowUpRight aria-hidden="true" size={18} />
@@ -99,8 +110,12 @@ export function Footer({
             <span>Call for hours and scheduling.</span>
           </p>
           <a href={facebookUrl} target="_blank" rel="noreferrer">
-            <span aria-hidden="true">f</span>
-            Facebook updates
+            <FacebookIcon size={16} />
+            Facebook
+          </a>
+          <a href={instagramUrl} target="_blank" rel="noreferrer">
+            <InstagramIcon size={16} />
+            Instagram
           </a>
         </section>
       </div>
