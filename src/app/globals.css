@@ -419,30 +419,23 @@ h3 {
   gap: 0.75rem;
 }
 
-.brand-mark__monogram {
+.brand-mark__icon {
   position: relative;
   display: grid;
   width: 3.55rem;
   height: 3.55rem;
   place-items: center;
-  border: 1px solid var(--gold);
+  color: var(--warm-white);
+  background: var(--charcoal-deep);
+  border: 1px solid rgba(215, 173, 34, 0.45);
   border-radius: 50%;
-  font-family: var(--display);
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: -0.08em;
+  box-shadow: inset 0 0 0 4px rgba(251, 250, 247, 0.07);
 }
 
-.brand-mark__monogram::after {
-  position: absolute;
-  right: -0.2rem;
-  bottom: 0.3rem;
-  width: 1.1rem;
-  height: 0.35rem;
-  border-bottom: 2px solid var(--gold);
-  border-radius: 50%;
-  content: "";
-  transform: rotate(-10deg);
+.brand-mark__icon svg {
+  width: 78%;
+  height: 78%;
+  overflow: visible;
 }
 
 .brand-mark__words {
@@ -465,14 +458,18 @@ h3 {
   letter-spacing: 0.32em;
 }
 
-.brand-mark--compact .brand-mark__monogram {
+.brand-mark--compact .brand-mark__icon {
   width: 2.7rem;
   height: 2.7rem;
-  font-size: 1.05rem;
 }
 
 .brand-mark--inverse {
   color: white;
+}
+
+.brand-mark--inverse .brand-mark__icon {
+  color: var(--charcoal-deep);
+  background: var(--warm-white);
 }
 
 .brand-mark--inverse .brand-mark__words small {
@@ -2288,10 +2285,9 @@ h3 {
     background: rgba(251, 250, 247, 0.96);
   }
 
-  .brand-mark__monogram {
+  .brand-mark__icon {
     width: 2.85rem;
     height: 2.85rem;
-    font-size: 1.1rem;
   }
 
   .brand-mark__words strong {
