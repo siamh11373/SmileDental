@@ -43,7 +43,11 @@ export function Header({
 
     const originalOverflow = document.body.style.overflow;
     const menuTrigger = triggerRef.current;
+    const inertTargets = document.querySelectorAll<HTMLElement>(
+      "main, footer, .sticky-call-bar",
+    );
     document.body.style.overflow = "hidden";
+    inertTargets.forEach((target) => target.setAttribute("inert", ""));
     closeButtonRef.current?.focus();
 
     const onKeyDown = (event: KeyboardEvent) => {
@@ -72,6 +76,7 @@ export function Header({
     return () => {
       document.removeEventListener("keydown", onKeyDown);
       document.body.style.overflow = originalOverflow;
+      inertTargets.forEach((target) => target.removeAttribute("inert"));
       menuTrigger?.focus();
     };
   }, [menuOpen]);
@@ -83,8 +88,8 @@ export function Header({
       <div className="utility-bar">
         <div className="container utility-bar__inner">
           <p className="utility-bar__notice">
-            <span>Welcoming</span>
-            <strong>New Patients</strong>
+            <span>Call to Schedule</span>
+            <strong>Questions Welcome</strong>
           </p>
           <a
             className="utility-bar__address"
@@ -99,7 +104,7 @@ export function Header({
             {phone}
           </a>
           <MagneticLink className="button button--gold button--small" href={phoneHref}>
-            Call Now
+            Call to Schedule
           </MagneticLink>
         </div>
       </div>
@@ -123,7 +128,7 @@ export function Header({
               className="button button--gold button--small"
               href={phoneHref}
             >
-              Book Appointment
+              Call to Schedule
             </MagneticLink>
           </div>
           <div className="nav-actions">
@@ -138,7 +143,7 @@ export function Header({
               ref={triggerRef}
               className="nav-actions__menu"
               type="button"
-              aria-label="Open navigation menu"
+              aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-controls="mobile-navigation"
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen(true)}
@@ -165,14 +170,22 @@ export function Header({
         >
           <div className="mobile-nav__header">
             <BrandMark compact />
-            <button
-              ref={closeButtonRef}
-              type="button"
-              aria-label="Close navigation menu"
-              onClick={closeMenu}
-            >
-              <X aria-hidden="true" size={28} />
-            </button>
+            <div className="mobile-nav__header-actions">
+              <a
+                href={phoneHref}
+                aria-label={`Call Smile Dental Care at ${phone}`}
+              >
+                <Phone aria-hidden="true" size={24} />
+              </a>
+              <button
+                ref={closeButtonRef}
+                type="button"
+                aria-label="Close navigation menu"
+                onClick={closeMenu}
+              >
+                <X aria-hidden="true" size={28} />
+              </button>
+            </div>
           </div>
           <div className="mobile-nav__links">
             {navigation.map((item, index) => (
@@ -183,7 +196,7 @@ export function Header({
             ))}
           </div>
           <div className="mobile-nav__footer">
-            <p>Ready to book your visit?</p>
+            <p>Ready to plan your visit?</p>
             <MagneticLink className="button button--gold" href={phoneHref}>
               <Phone aria-hidden="true" size={17} />
               {phone}

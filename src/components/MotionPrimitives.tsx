@@ -94,6 +94,7 @@ export function MagneticLink({
       className={`magnetic-link${className ? ` ${className}` : ""}`}
       onMouseMove={(event) => {
         onMouseMove?.(event);
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
         const node = ref.current;
         if (!node) return;
         const rect = node.getBoundingClientRect();
@@ -135,6 +136,7 @@ export function SpotlightCard({
       className={`spotlight-card${className ? ` ${className}` : ""}`}
       onMouseMove={(event) => {
         onMouseMove?.(event);
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
         const node = ref.current;
         if (!node) return;
         const rect = node.getBoundingClientRect();

@@ -1,12 +1,5 @@
-import {
-  CalendarDays,
-  HeartHandshake,
-  MessageCircleMore,
-  ShieldCheck,
-  Sparkles,
-  WandSparkles,
-  type LucideIcon,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 import type { CSSProperties } from "react";
 import { AnimatedContent, SpotlightCard } from "./MotionPrimitives";
 
@@ -14,7 +7,8 @@ type Service = {
   number: string;
   title: string;
   summary: string;
-  icon: string;
+  image: string;
+  imageAlt: string;
 };
 
 type ServicesProps = {
@@ -22,15 +16,6 @@ type ServicesProps = {
   eyebrow: string;
   title: string;
   body: string;
-};
-
-const icons: Record<string, LucideIcon> = {
-  shield: ShieldCheck,
-  sparkles: Sparkles,
-  wand: WandSparkles,
-  heart: HeartHandshake,
-  message: MessageCircleMore,
-  calendar: CalendarDays,
 };
 
 export function Services({ services, eyebrow, title, body }: ServicesProps) {
@@ -47,7 +32,6 @@ export function Services({ services, eyebrow, title, body }: ServicesProps) {
 
         <div className="services__grid">
           {services.map((service, index) => {
-            const Icon = icons[service.icon] ?? Sparkles;
             return (
               <SpotlightCard
                 className="service-card"
@@ -55,17 +39,32 @@ export function Services({ services, eyebrow, title, body }: ServicesProps) {
                 role="article"
                 style={{ "--motion-delay": `${index * 70}ms` } as CSSProperties}
               >
-                <div className="service-card__top">
-                  <span>{service.number}</span>
-                  <Icon aria-hidden="true" size={28} strokeWidth={1.35} />
-                </div>
-                <div>
-                  <h3>{service.title}</h3>
-                  <p>{service.summary}</p>
-                </div>
-                <a href="#contact" aria-label={`Ask about ${service.title}`}>
-                  Ask our team
-                  <span aria-hidden="true">↗</span>
+                <a
+                  className="service-card__link"
+                  href="#contact"
+                  aria-label={`Call to ask about ${service.title}`}
+                >
+                  <div className="service-card__image">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      sizes="(max-width: 639px) 100vw, (max-width: 899px) 50vw, 33vw"
+                    />
+                  </div>
+                  <div className="service-card__content">
+                    <div className="service-card__top">
+                      <span>{service.number}</span>
+                    </div>
+                    <div>
+                      <h3>{service.title}</h3>
+                      <p>{service.summary}</p>
+                    </div>
+                    <span className="service-card__cta">
+                      Ask our team
+                      <ArrowUpRight aria-hidden="true" size={17} />
+                    </span>
+                  </div>
                 </a>
               </SpotlightCard>
             );

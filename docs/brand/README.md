@@ -1,31 +1,32 @@
 # Brand
 
-Smile Dental Care now has a modernized vector logo system based on the supplied
-legacy mark, using the site's existing charcoal, warm white, and gold palette.
+Smile Dental Care uses the supplied navy-and-gold logo artwork and favicon
+package. Do not recreate the mark as a new vector unless the client provides a
+new source file.
 
 ## Brand Assets
 
-- `public/brand/smile-dental-mark.svg`  
-  Square icon mark for favicons, social avatars, and small placements.
-- `public/brand/smile-dental-logo-horizontal.svg`  
-  Primary horizontal wordmark for headers, documents, and general use.
-- `public/brand/smile-dental-logo-full.svg`  
-  Full lockup with `Dr. Bassam Ali & Associates` and `313.438.5158`.
-- `src/app/icon.svg`  
-  App favicon used by Next.js.
+- `public/brand/smile-dental-logo-original.png`  
+  Original uploaded logo image.
+- `public/brand/smile-dental-logo.png`  
+  Cropped, transparent placement copy made from the original uploaded logo.
+- `public/favicon.ico`, `public/favicon-*.png`, `public/apple-touch-icon.png`, `public/android-chrome-*.png`  
+  Favicon package supplied by the client.
+- `public/site.webmanifest`  
+  Web app manifest from the supplied favicon package.
 
 ## Colors
 
-- Deep charcoal: `#1f2220`
-- Charcoal: `#2f312f`
+- Deep navy: `#03070d`
+- Navy: `#102246`
 - Warm white: `#fbfaf7`
-- Gold: `#d7ad22`
-- Gold dark: `#ae8611`
+- Gold: `#f7c51e`
+- Gold dark: `#c88f12`
 
 ## Usage Notes
 
-Use the horizontal logo anywhere there is enough width. Use the icon mark for
-small or square contexts. Keep the logo on warm white, cream, or deep charcoal
-backgrounds. Do not recolor it blue, teal, orange, or purple.
+Use the placed logo image anywhere there is enough width. Use the supplied
+favicon files for small or square contexts. Keep the logo on warm white, cream,
+navy, or black backgrounds. Do not redraw or recolor it.
 
 Use this folder for Smile Dental Care brand notes, visual direction, color palettes, typography choices, and tone of voice.

@@ -1,7 +1,6 @@
-import { ArrowDown, ArrowUpRight, Check, Phone } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Check, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import { AnimatedContent, MagneticLink, SplitText } from "./MotionPrimitives";
-import { Stars } from "./Stars";
 
 type HeroProps = {
   eyebrow: string;
@@ -12,9 +11,6 @@ type HeroProps = {
   phoneHref: string;
   teamImage: string;
   trustChips: string[];
-  rating: number;
-  reviewCount: number;
-  reviewsUrl: string;
 };
 
 export function Hero({
@@ -26,15 +22,12 @@ export function Hero({
   phoneHref,
   teamImage,
   trustChips,
-  rating,
-  reviewCount,
-  reviewsUrl,
 }: HeroProps) {
   return (
     <section className="hero" id="top">
       <Image
         className="hero__ambient-image"
-        src="/images/generated/hero-ambient-charcoal-gold.png"
+        src={teamImage}
         alt=""
         fill
         priority
@@ -49,18 +42,12 @@ export function Hero({
             <SplitText text={headline} />
           </h1>
           <p className="hero__body">{body}</p>
-          <a
-            className="hero__rating"
-            href={reviewsUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Rated ${rating} stars from ${reviewCount} Google reviews. Read them on Google.`}
-          >
-            <Stars rating={rating} size={19} />
+          <div className="hero__note" aria-label="Practice location">
+            <MapPin aria-hidden="true" size={18} />
             <span>
-              <strong>{rating} Rating</strong> From {reviewCount} Google Reviews
+              <strong>Dearborn dental care</strong> on Dix Avenue
             </span>
-          </a>
+          </div>
           <div className="hero__actions">
             <MagneticLink className="button button--gold hero__call" href={phoneHref}>
               <Phone aria-hidden="true" size={18} />
@@ -85,7 +72,7 @@ export function Hero({
           <div className="hero__media-frame">
             <Image
               src={teamImage}
-              alt="Smile Dental Care team outside the Dearborn clinic"
+              alt="Smile Dental Care team inside the Dearborn clinic"
               fill
               priority
               sizes="(max-width: 899px) 100vw, 56vw"

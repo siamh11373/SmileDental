@@ -13,36 +13,30 @@
     "instagramUrl": "https://www.instagram.com/smiledentalcaredearborn/"
   },
   "reviews": {
-    "rating": 4.7,
-    "count": 713,
     "profileUrl": "https://www.google.com/maps/search/?api=1&query=Smile+Dental+Care+9550+Dix+Ave+Suite+D+Dearborn+MI+48120",
-    "mentions": [
-      { "topic": "friendly staff", "count": 187 },
-      { "topic": "kind staff", "count": 71 }
-    ],
     "highlights": [
       {
-        "name": "Chantyl",
-        "quote": "Since day one, my experience has been amazing. The entire team is kind, caring, and always makes me feel comfortable."
+        "title": "Call before you visit",
+        "body": "Confirm current hours, appointment availability, and what to bring before you come in."
       },
       {
-        "name": "Deena",
-        "quote": "Super friendly and kept me comfortable the whole time. There was absolutely no pain at all. I definitely recommend them."
+        "title": "Ask about your next step",
+        "body": "Share what is bothering you or what you want to improve, and the team can help route your visit."
       },
       {
-        "name": "Badr A.",
-        "quote": "I've been coming here for 7 years. My loyalty to Dr. Bassam Ali and his team continues because of the care they give every day."
+        "title": "Bring your questions",
+        "body": "Use your appointment to talk through care options, timing, comfort, and follow-up needs."
       },
       {
-        "name": "Haeder A.",
-        "quote": "This is by far the best dental office I have ever visited. The staff are polite, respectful, and extremely helpful."
+        "title": "Plan around your schedule",
+        "body": "Call the office for current scheduling details, directions, and visit preparation."
       }
     ]
   },
   "navigation": [
     { "label": "About", "href": "#about" },
-    { "label": "Services", "href": "#care" },
-    { "label": "Reviews", "href": "#reviews" },
+    { "label": "Care", "href": "#care" },
+    { "label": "Experience", "href": "#experience" },
     { "label": "Team", "href": "#team" },
     { "label": "Visit", "href": "#visit" }
   ],
@@ -59,47 +53,53 @@
     "primaryCta": "Call (313) 438-5158",
     "secondaryCta": "Meet the Team",
     "trustChips": [
-      "New patients welcome",
-      "Kind, friendly staff",
+      "Call to schedule",
+      "Questions answered clearly",
       "Dix Ave, Dearborn"
     ]
   },
   "services": [
     {
       "number": "01",
-      "title": "Preventive Care",
-      "summary": "Cleanings, exams, and preventive care to keep your smile healthy.",
-      "icon": "shield"
+      "title": "Preventive Visits",
+      "summary": "Call to ask about routine visits, exams, and care that helps you stay on track.",
+      "image": "/images/team/smile-dental-team-interior.png",
+      "imageAlt": "Smile Dental Care team inside the Dearborn clinic"
     },
     {
       "number": "02",
-      "title": "Restorative Care",
-      "summary": "Fillings and restorative care focused on comfort and lasting results.",
-      "icon": "sparkles"
+      "title": "Tooth Repair Questions",
+      "summary": "Ask the team what options may fit a chipped, sensitive, or uncomfortable tooth.",
+      "image": "/images/doctor/dr-bassam-ali-portrait.png",
+      "imageAlt": "Dr. Bassam Ali at Smile Dental Care"
     },
     {
       "number": "03",
-      "title": "Cosmetic Care",
-      "summary": "Smile improvements tailored to how you want to look and feel.",
-      "icon": "wand"
+      "title": "Smile Goals",
+      "summary": "Talk with the office about appearance-focused questions and available next steps.",
+      "image": "/images/exterior/smile-dental-building-team-wide.png",
+      "imageAlt": "Smile Dental Care team outside the clinic building"
     },
     {
       "number": "04",
-      "title": "Family Dentistry",
-      "summary": "Care for every age in a calm, welcoming office.",
-      "icon": "heart"
+      "title": "Family Dental Visits",
+      "summary": "Ask about scheduling visits for different members of your household.",
+      "image": "/images/team/smile-dental-team-exterior.png",
+      "imageAlt": "Smile Dental Care team standing outside the clinic"
     },
     {
       "number": "05",
       "title": "Consultations",
-      "summary": "Ask questions, share your goals, and get a clear next step.",
-      "icon": "message"
+      "summary": "Share your questions and get help choosing the right appointment type.",
+      "image": "/images/team/smile-dental-team-interior.png",
+      "imageAlt": "Smile Dental Care team inside the clinic"
     },
     {
       "number": "06",
       "title": "Ongoing Care",
-      "summary": "Follow-up and guidance so your smile stays healthy over time.",
-      "icon": "calendar"
+      "summary": "Call to plan follow-up timing and understand what to do after your visit.",
+      "image": "/images/exterior/smile-dental-building-team-wide.png",
+      "imageAlt": "Smile Dental Care clinic exterior with the team"
     }
   ],
   "careFeatures": [
@@ -125,8 +125,8 @@
   "benefits": [
     {
       "number": "01",
-      "title": "Kind, welcoming staff",
-      "body": "Patients often mention our friendly team, from the front desk to the treatment room."
+      "title": "A clear first call",
+      "body": "Reach the office directly to ask about appointments, directions, and visit preparation."
     },
     {
       "number": "02",
@@ -135,20 +135,20 @@
     },
     {
       "number": "03",
-      "title": "Gentle, comfortable care",
-      "body": "Many patients tell us they feel at ease and experience little to no discomfort."
+      "title": "Comfort-minded visits",
+      "body": "Tell us what you need and what concerns you, so your visit can be planned thoughtfully."
     },
     {
       "number": "04",
       "title": "Easy to get started",
-      "body": "Call us to ask a question or schedule your visit. New patients are welcome."
+      "body": "Call us to ask a question, confirm current availability, or schedule your visit."
     }
   ],
   "sections": {
     "services": {
-      "eyebrow": "Our Services",
-      "title": "Dental care for every need.",
-      "body": "From routine cleanings to smile improvements, we help you find the right next step."
+      "eyebrow": "Care Topics",
+      "title": "Ask about the care your smile needs.",
+      "body": "Because treatment availability can change, call our team to confirm the right appointment type for you."
     },
     "whyUs": {
       "eyebrow": "Why Patients Choose Us",
@@ -156,9 +156,9 @@
       "body": ""
     },
     "reviews": {
-      "eyebrow": "4.7 Stars on Google",
-      "title": "Trusted by Dearborn families.",
-      "body": "Real reviews from real patients: kind staff, clear care, and visits people come back for."
+      "eyebrow": "What To Expect",
+      "title": "A clearer visit from the first call.",
+      "body": "Start with a quick call to confirm current hours, scheduling, directions, and the best next step for your smile."
     },
     "team": {
       "eyebrow": "Meet Your Team",
@@ -170,18 +170,18 @@
       "body": "From the front desk to the treatment room, we make every visit clear, comfortable, and cared for."
     },
     "cta": {
-      "eyebrow": "Book Your Visit",
+      "eyebrow": "Call To Schedule",
       "title": "Your healthier smile starts with a call.",
       "body": "Have a question or ready to schedule? Our Dearborn team is here to help."
     },
     "midCta": {
-      "eyebrow": "New Patients Welcome",
+      "eyebrow": "Call To Schedule",
       "title": "Ready to schedule your visit?"
     },
     "visit": {
       "eyebrow": "Visit Us in Dearborn",
       "title": "Convenient care on Dix Avenue.",
-      "body": "Located at 9550 Dix Ave Suite D. Call for directions, hours, or to book your appointment."
+      "body": "Located at 9550 Dix Ave Suite D. Call for directions, hours, or to schedule your appointment."
     }
   }
 }

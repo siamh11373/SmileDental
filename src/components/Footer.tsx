@@ -123,8 +123,10 @@ export function Footer({
       <div className="container footer__bottom">
         <p>© {new Date().getFullYear()} Smile Dental Care.</p>
         <div>
-          <a href="#top">Privacy Policy</a>
-          <a href="#top">Accessibility</a>
+          <a href="#top">Back to top</a>
+          <a href={mapsUrl} target="_blank" rel="noreferrer">
+            Directions
+          </a>
           <a href={phoneHref}>Call Now</a>
         </div>
       </div>

@@ -28,11 +28,6 @@ export default function Home() {
     },
     image: site.images.teamInterior,
     sameAs: [site.practice.facebookUrl, site.practice.instagramUrl],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: site.reviews.rating,
-      reviewCount: site.reviews.count,
-    },
   };
 
   return (
@@ -41,13 +36,16 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <Header
         addressLines={site.practice.addressLines}
         phone={site.practice.phone}
         phoneHref={site.practice.phoneHref}
         navigation={site.navigation}
       />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Hero
           eyebrow={site.homepage.eyebrow}
           headline={site.homepage.heroHeadline}
@@ -57,9 +55,6 @@ export default function Home() {
           phoneHref={site.practice.phoneHref}
           teamImage={site.images.teamInterior}
           trustChips={site.homepage.trustChips}
-          rating={site.reviews.rating}
-          reviewCount={site.reviews.count}
-          reviewsUrl={site.reviews.profileUrl}
         />
         <Services
           services={site.services}
@@ -72,11 +67,9 @@ export default function Home() {
           phoneHref={site.practice.phoneHref}
         />
         <Reviews
-          rating={site.reviews.rating}
-          count={site.reviews.count}
           profileUrl={site.reviews.profileUrl}
-          mentions={site.reviews.mentions}
           highlights={site.reviews.highlights}
+          phoneHref={site.practice.phoneHref}
           eyebrow={site.sections.reviews.eyebrow}
           title={site.sections.reviews.title}
           body={site.sections.reviews.body}

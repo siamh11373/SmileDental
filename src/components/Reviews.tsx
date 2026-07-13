@@ -1,41 +1,31 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Phone } from "lucide-react";
 import type { CSSProperties } from "react";
 import { AnimatedContent, MagneticLink, SpotlightCard } from "./MotionPrimitives";
-import { Stars } from "./Stars";
 
 type ReviewHighlight = {
-  name: string;
-  quote: string;
-};
-
-type ReviewMention = {
-  topic: string;
-  count: number;
+  title: string;
+  body: string;
 };
 
 type ReviewsProps = {
-  rating: number;
-  count: number;
   profileUrl: string;
-  mentions: ReviewMention[];
   highlights: ReviewHighlight[];
+  phoneHref: string;
   eyebrow: string;
   title: string;
   body: string;
 };
 
 export function Reviews({
-  rating,
-  count,
   profileUrl,
-  mentions,
   highlights,
+  phoneHref,
   eyebrow,
   title,
   body,
 }: ReviewsProps) {
   return (
-    <section className="reviews section" id="reviews">
+    <section className="reviews section" id="experience">
       <div className="container">
         <AnimatedContent className="section-heading section-heading--split">
           <div>
@@ -47,52 +37,43 @@ export function Reviews({
 
         <div className="reviews__layout">
           <AnimatedContent className="reviews__summary">
-            <Stars
-              rating={rating}
-              size={26}
-              label={`Rated ${rating} out of 5 stars on Google`}
-            />
+            <p className="reviews__kicker">Start here</p>
             <p className="reviews__score">
-              <strong>{rating}</strong>
-              <span>out of 5</span>
+              <strong>Call</strong>
+              <span>for current scheduling</span>
             </p>
             <p className="reviews__count">
-              From {count} Google reviews and counting.
+              We will help you confirm availability, directions, and the right
+              appointment type before you visit.
             </p>
-            <ul className="reviews__mentions" aria-label="Most mentioned in reviews">
-              {mentions.map((mention) => (
-                <li key={mention.topic}>
-                  “{mention.topic}” × {mention.count}
-                </li>
-              ))}
-            </ul>
-            <MagneticLink
-              className="button button--gold"
-              href={profileUrl}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Read Google Reviews
-              <ArrowUpRight aria-hidden="true" size={17} />
-            </MagneticLink>
+            <div className="reviews__actions">
+              <MagneticLink className="button button--gold" href={phoneHref}>
+                <Phone aria-hidden="true" size={17} />
+                Call to Schedule
+              </MagneticLink>
+              <MagneticLink
+                className="button button--ghost-light"
+                href={profileUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Profile
+                <ArrowUpRight aria-hidden="true" size={17} />
+              </MagneticLink>
+            </div>
           </AnimatedContent>
 
           <div className="reviews__grid">
-            {highlights.map((review, index) => (
+            {highlights.map((highlight, index) => (
               <SpotlightCard
                 className="review-card"
-                key={review.name}
+                key={highlight.title}
                 role="article"
                 style={{ "--motion-delay": `${index * 80}ms` } as CSSProperties}
               >
-                <Stars rating={5} size={16} label="Five star Google review" />
-                <blockquote>“{review.quote}”</blockquote>
-                <footer>
-                  <strong>{review.name}</strong>
-                  <a href={profileUrl} target="_blank" rel="noreferrer">
-                    Google review
-                  </a>
-                </footer>
+                <span className="review-card__index">0{index + 1}</span>
+                <h3>{highlight.title}</h3>
+                <p>{highlight.body}</p>
               </SpotlightCard>
             ))}
           </div>

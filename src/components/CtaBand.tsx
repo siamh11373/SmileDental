@@ -14,7 +14,7 @@ export function CtaBand({ phone, phoneHref, eyebrow, title }: CtaBandProps) {
       <AnimatedContent className="container cta-band__inner">
         <div>
           <p className="eyebrow eyebrow--light">{eyebrow}</p>
-          <p className="cta-band__title">{title}</p>
+          <h2 className="cta-band__title">{title}</h2>
         </div>
         <MagneticLink className="button button--gold" href={phoneHref}>
           <Phone aria-hidden="true" size={17} />
